@@ -1,0 +1,11 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    Console.Write("What is the temperature today?");
+    double temperature = Convert.ToDouble(Console.ReadLine());
+    string message;
+    message = (temperature >= 15) ? "It's warm outside." : "It's cold outside.";
+    Console.WriteLine(message);
+  }
+}
