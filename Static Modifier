@@ -1,0 +1,24 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    Car car1 = new Car("Mustang");
+    Car car2 = new Car("Corvette");
+    Car car3 = new Car("Camaro");
+    Console.WriteLine(Car.numberOfCars);
+    Car.StartRace();
+    }
+  }
+
+class Car {
+  String model;
+  public static int numberOfCars;
+  public Car(String model) {
+    this.model = model;
+    numberOfCars++;
+  }
+  public static void StartRace()
+  {
+    Console.WriteLine("3...2...1...GO!");
+  }
+}
