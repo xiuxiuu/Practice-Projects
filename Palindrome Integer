@@ -1,0 +1,18 @@
+int x = 38483;
+int original = x;
+int reversed = 0;
+int remainder = 0;
+while (x!=0)
+{
+    remainder = x % 10;
+    reversed = reversed * 10 + remainder;
+    x /= 10;
+}
+if (original == reversed)
+{
+    Console.WriteLine($"{original} is a palindrome!");
+}
+else
+{
+    Console.WriteLine($"{original} is ot a palindrome.");
+}
