@@ -1,0 +1,11 @@
+int x = 842;
+Console.WriteLine(x);
+long reversed = 0;
+int remainder = 0;
+while (x!=0)
+{
+    remainder = x % 10;
+    reversed = reversed * 10 + remainder;
+    x /= 10;
+}
+Console.WriteLine(reversed);
